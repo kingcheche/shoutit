@@ -1,0 +1,110 @@
+*{
+
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial;
+	font-size: 15px;
+	line-height: 1.5em;
+	/*light grey colour code is #f4f4f4*/
+	background:#f4f4f4;
+
+}
+
+#container{
+	/*dark grey colour code is #333333
+	NOTE ALSO THAT WE USE # TO PULL IN AN ID FROM OUR INDEX PAGE INTO THE CSS PAGE*/
+
+	background: #333333;
+	margin: 50px auto;
+	overflow: auto;
+	width: 60%;
+	min-height: 630px;}
+
+header h1 {
+
+	color: #ffffff;
+	font-size: 22px;
+	padding: 15px 0px 10px 10px ;
+	/*15px top, 0 , 10px bottom, 10left*/
+	border-bottom: 1px solid #ffffff;
+	/*color code for white is #ffffff*/
+
+}
+
+#shouts{
+    width: 90%;
+    background:#f4f4f4;
+    height: 400px;
+    margin: 20px auto;
+    overflow: auto;
+}
+/*full stop is used to identify a 'class'*/
+.shout{
+	list-style: none;
+	padding: 8px;
+	border-bottom: 1px #cccccc dotted;
+	/*#cccccc is semi light grey*/
+}
+.error{
+	background: red;
+	/*color represnts colour of the text and #ffffff represents white*/
+	color: #ffffff;
+	padding: 5px;
+	margin-bottom:20px;
+	}
+
+
+
+.shout span{
+	color: #aaaaaa;
+	/*for a lighter grey*/
+
+}
+/*notice how width is always put in percentage*/
+#input{
+	width: 90%;
+	min-height: 80px;
+	margin: auto;
+	padding: 0;}
+	
+#input input[type ='text']{
+	height: 25px;
+	width: 48%;
+	padding: 3px;
+	margin-bottom: 20px;
+	border: #666666 solid 1px;
+	/*Dark grey colour code*/
+
+} 
+
+#input  .shout-btn{      
+	/*I noticed something really funny while trying to get the shout button to fill the width of its placeholder; LOL! I noticed that if it is written as #input.shout-btn, it will not work, the modafuckn trick lies in hitting the space button once befor the dot
+	,hitting it twice also works*/
+	padding:5px;
+	margin-bottom:20px;
+	width: 100%;
+	margin: 10px auto;
+
+}
+
+ 
+
+@media only screen and (max-width: 768px){
+	#input input[type ='text']{
+		width: 98%
+	}
+}
+
+/*Next step we did was to create the database on mysql database using phpmyadmin;
+Step 1: Click on New then enter the name of your database
+step2: Enter each variable one by one. In our firstcase we, our variable were USER which we set to type to integer and number to 11, we also selected it as "primary" 
+and ticked auto increment so that any additional data on the web browser can be stored in automatically
+then we entered the second variable which is the users message,entered as Message/s set it to varchar(variable/character) and set length to 50
+then we Entered time and selected type as time then click save just below
+Step 3: immediately it displays again, we click insert to put data inside the created info above*/
+
+/*Then we go ahead to create the code base to connect our data we stored in MySQL using phpmyadmin to our browser
+step1: we create a variable that will hold the ffl information; "localhost","username","password" and name of database (in this case "shoutit") which has a Table named shouts */
