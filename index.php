@@ -9,7 +9,9 @@ $shouts = mysqli_query($conn,$query);
      <head>
              <meta charset='utf-8'/>
 	<title>CHAT IT!</title>
-	  <link rel="stylesheet" type="text/css" href="css/style.css">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
 <body>
     <!-- Notice how the attributes are all in green colour ; To create an attribute associated to a html tag, you must not close the tag before calling the attribute ie type the html tag;call the attribute and equal it to its key(in quotes) before closing the tag -->
