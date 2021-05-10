@@ -18,9 +18,10 @@ body {
 	NOTE ALSO THAT WE USE # TO PULL IN AN ID FROM OUR INDEX PAGE INTO THE CSS PAGE*/
 
 	background: #333333;
-	margin: 50px auto;
+	margin:auto;
 	overflow: auto;
 	width: 260px;
+Margin-top:50px;
 	min-height: 630px;}
 
 header h1 {
